@@ -94,14 +94,13 @@ else:
     with st.spinner('AI is evaluating...'):
       try:
         response = client.models.generate_content(
-            model='gemini-2.0-flash',
+            model="gemini-3.8-flash",
             contents=user_prompt,
             config={
-                'system_instruction': (
-                    'You are a strict academic assessor conducting an'
-                    ' assessment for student roll number'
-                    f' {st.session_state.student_roll}. Evaluate their answers'
-                    ' objectively.'
+                "system_instruction": (
+                    f"You are a strict academic assessor conducting an assessment "
+                    f"for student roll number {st.session_state.student_roll}. "
+                    f"Evaluate their answers objectively."
                 )
             },
         )
