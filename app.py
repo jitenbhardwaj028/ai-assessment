@@ -34,7 +34,7 @@ if "authenticated" not in st.session_state:
 
 # 3. Login Screen
 if not st.session_state.authenticated:
-    st.markdown("Please enter your roll number to access the assessment.")
+    st.markdown("Please enter your roll number.")
     entered_roll = st.text_input("Roll Number:")
 
     if st.button("Verify & Start Assessment"):
