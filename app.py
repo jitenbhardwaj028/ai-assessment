@@ -21,7 +21,7 @@ def load_students():
 
 df_students = load_students()
 
-st.title("🔒 Secure AI Assessment Portal")
+st.title("🔒 Welcome to Assessment Portal")
 
 if df_students is None:
     st.error("Error: Could not find students.xlsx. Please upload it to your GitHub repository.")
