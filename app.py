@@ -107,7 +107,7 @@ else:
         )
         ai_reply = response.text
       except Exception as e:
-        ai_reply = 'f"Error details: {str(e)}"'
+        ai_reply = f"Error details: {str(e)}"
         
 
     with st.chat_message('assistant'):
